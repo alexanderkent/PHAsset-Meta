@@ -6,7 +6,8 @@ PHAsset category to simplify image meta / exif operations
 
 /*!
  @method        requestUniformTypeWithCompletionBlock
- @description   Get system-declared uniform type identifiers of an asset (com.compuserve.gif, public.png, etc)
+ @description   Get system-declared uniform type identifiers of an asset 
+ (com.compuserve.gif, public.png, etc)
  @param         completionBlock This block is passed a string. This parameter may be nil.
  */
 -(void)requestUniformTypeWithCompletionBlock:(PHAssetStringBlock)completionBlock;
@@ -15,7 +16,8 @@ PHAsset category to simplify image meta / exif operations
  @method        requestMetadataWithOptions:options:completionBlock
  @description   Get metadata dictionary of an asset (contains sub-dictionaries EXIF, GPS etc)
  @param         options An PHContentEditingInputRequestOptions to specify options of a PHAsset object (networkAccessAllowed, progressHandler)
- @param         completionBlock This block is passed a dictionary of metadata properties. This parameter may be nil.
+ @param         completionBlock This block is passed a dictionary of metadata properties. 
+ This parameter may be nil.
  */
 -(void)requestMetadataWithOptions:(PHContentEditingInputRequestOptions*)options completionBlock:(PHAssetMetadataBlock)completionBlock;
 
@@ -23,7 +25,8 @@ PHAsset category to simplify image meta / exif operations
 /*!
  @method        requestMetadataWithCompletionBlock
  @description   Get metadata dictionary of an asset (contains sub-dictionaries EXIF, GPS etc)
- @param         completionBlock This block is passed a dictionary of metadata properties. This parameter may be nil.
+ @param         completionBlock This block is passed a dictionary of metadata properties. 
+ This parameter may be nil.
  */
 -(void)requestMetadataWithCompletionBlock:(PHAssetMetadataBlock)completionBlock;
 
